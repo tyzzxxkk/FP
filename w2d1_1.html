@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 목록</title>
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    
+    header {
+        background-color: #82DC28; 
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    
+    main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+    
+    section h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #82DC28;
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    section h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #82DC28;
+        margin: 10px auto 0;
+    }
+    
+    .product {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #82DC28;
+        margin-bottom: 15px;
+    }
+    
+    .product h3 {
+        font-size: 1.5em;
+        color: #555;
+        margin: 10px 0;
+    }
+    
+    .product .price {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #000000;
+        margin: 5px 0 15px;
+    }
+    
+    .product p {
+        font-size: 1em;
+        color: #777;
+        margin: 5px 0;
+    }
+    
+    .product button {
+        background-color: #82DC28;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.3s ease;
+    }
+    
+    .product button:hover {
+        background-color: #006666;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+        font-size: 0.9em;
+    }
+</style>
+<body>
+    <header>
+        <h1>미니 올리브영</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>추천 상품</h2>
+
+            <div class="product">
+                <img src="/img/vdl.jpg" alt="상품 이미지">
+                <h3>파운데이션</h3>
+                <p class="price">30,000</p>
+                <p>VDL 커버스테인 퍼펙팅 파운데이션</p>
+                <button>장바구니</button>
+                <button>구매하기</button>
+            </div>
+
+            <div class="product">
+                <img src="/img/bbia.jpg" alt="상품 이미지">
+                <h3>아이섀도우</h3>
+                <p class="price">₩17,000</p>
+                <p>삐아 라스트 아이 팔레트 01 초코마을</p>
+                <button>장바구니</button>
+                <button>구매하기</button>
+            </div>
+
+            <div class="product">
+                <img src="/img/peripera.webp" alt="상품 이미지">
+                <h3>립스틱</h3>
+                <p class="price">₩9,000</p>
+                <p>페리페라 잉크 무드 매트스틱 012 힙생힙사</p>
+                <button>장바구니</button>
+                <button>구매하기</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 기태연 쇼핑몰</p>
+    </footer>
+</body>
+</html>
