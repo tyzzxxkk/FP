@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+  }
+  header h1 { margin: 0; font-size: 24px; }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+  }
+  
+  section {
+    background: #fff;
+    max-width: 900px;
+    margin: 16px auto;
+    padding: 16px;
+    border: 1px solid #ddd;
+  }
+  section h2 {
+    color: #007bff;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 0;
+  }
+  
+  .row {
+    display: flex;
+    gap: 16px;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  ul { padding-left: 20px; }
+  
+  .cards {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 12px;
+    width: 280px;
+    background: #fafafa;
+  }
+  .card h3 { margin-top: 0; }
+  
+  .btn, button.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #005bbb;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn:hover, button.btn:hover {
+    background-color: #005bbb;
+  }
+  
+  label { display: block; margin: 8px 0 4px; }
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    margin-top: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .row { display: block; }
+    .avatar { margin-bottom: 12px; }
+  }
+  
