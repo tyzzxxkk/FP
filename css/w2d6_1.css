@@ -1,3 +1,4 @@
+/* 전체 레이아웃 */
 body {
     font-family: "Arial", sans-serif;
     background-color: #f4f4f4;
@@ -5,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
   }
-
+  
+  /* 헤더 */
   header {
     background-color: #007BFF;
     color: white;
@@ -17,7 +19,8 @@ body {
     margin: 0;
     font-size: 2.5rem;
   }
-
+  
+  /* 섹션 */
   section {
     background: white;
     margin: 20px auto;
@@ -32,12 +35,14 @@ body {
     border-bottom: 2px solid #eee;
     padding-bottom: 5px;
   }
-
+  
+  /* 리스트 */
   ul {
     list-style-type: square;
     padding-left: 20px;
   }
-
+  
+  /* 연락처 */
   a {
     color: #007BFF;
     text-decoration: none;
@@ -45,7 +50,8 @@ body {
   a:hover {
     text-decoration: underline;
   }
-
+  
+  /* 푸터 */
   footer {
     background: #333;
     color: #fff;
