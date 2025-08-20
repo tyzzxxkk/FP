@@ -11,14 +11,14 @@
         let b = "10";
         let c = 20;
 
-        console.log(a == b);   
-        console.log(a === b);
-        
-        console.log(a < c && c > 15);  
+        console.log(a == b);   // true (값만 같음)
+        console.log(a === b);  // false (자료형이 다름: number vs string)
 
-        console.log(a > c || c > 15);  
+        console.log(a < c && c > 15);  // true (둘 다 참이어야 true)
 
-        console.log(!(a > c));
+        console.log(a > c || c > 15);  // true (하나만 참이면 true)
+
+        console.log(!(a > c)); // true (a > c는 false니까 반대)
       </script>
       
 </body>
