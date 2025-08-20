@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const input = prompt("점수를 입력하세요"); 
+        const score = number(input);             
+      
+        if (isNaN(score)) {
+          console.log("숫자를 입력하세요!");
+        } else if (score >= 60) {
+          console.log("합격");
+        } else {
+          console.log("불합격");
+        }
+    </script>
+</body>
+</html>
