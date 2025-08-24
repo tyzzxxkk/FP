@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function roll() {
+            return Math.floor(Math.random()*6) + 1;
+          }
+          const me = roll();
+          const you = roll();
+          let result = (me === you) ? '무승부' : (me > you ? '내가 이김' : '네가 이김');
+          console.log(`나:${me} 너:${you} → ${result}`);
+
+          function randomBirthday(startYear=1990, endYear=2020) {
+            // 년도 무작위
+            const y = Math.floor(Math.random()*(endYear-startYear+1)) + startYear;
+            // 월(1~12)
+            const m = Math.floor(Math.random()*12) + 1;
+            // 해당 월의 말일 구하기: 다음달 0일 = 이번달 마지막 날
+            const lastDay = new Date(y, m, 0).getDate();
+            const d = Math.floor(Math.random()*lastDay) + 1;
+            const mm = String(m).padStart(2,'0');
+            const dd = String(d).padStart(2,'0');
+            return `${y}-${mm}-${dd}`;
+          }
+          console.log(randomBirthday());       // 예: 2003-11-07
+          console.log(randomBirthday(2005,2015));
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth()+1).padStart(2, '0'); // 0~11 → +1
+        const d = String(now.getDate()).padStart(2, '0');
+        console.log(`${y}-${m}-${d}`); // YYYY-MM-DD
+
+        function weekdayOf(birthStr) {
+            const days = ['일','월','화','수','목','금','토'];
+            const dt = new Date(birthStr);   // 'YYYY-MM-DD'
+            return days[dt.getDay()];
+          }
+        console.log(weekdayOf('2010-07-12')); // 예: '월'
+
+        function dday(targetStr) {
+            const MS = 24*60*60*1000;
+            const today = new Date();                 // 현재 시각
+            const target = new Date(targetStr);       // 목표 날짜
+            // 날짜만 비교하도록 시‧분‧초 제거
+            today.setHours(0,0,0,0);
+            target.setHours(0,0,0,0);
+            const diff = Math.round((target - today) / MS);
+            if (diff > 0) return `D-${diff}`;
+            if (diff < 0) return `D+${Math.abs(diff)}`;
+            return 'D-Day';
+          }
+          console.log(dday('2025-12-31'));
+    </script>
+</body>
+</html>
