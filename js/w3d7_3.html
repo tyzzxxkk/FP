@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(() => console.log("done"), 500);
+
+        ["a","b","c"].forEach((v,i) => console.log(i, v));
+    </script>
+
+    <button id="btn">Click</button>
+    <script>
+    document.getElementById("btn").addEventListener("click", () => {
+      console.log("clicked");
+    });
+    </script>
+</body>
+</html>
