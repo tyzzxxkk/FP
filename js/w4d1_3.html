@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>리스트 색상 변경</title>
+</head>
+<body>
+  <ul>
+    <li>사과</li>
+    <li>바나나</li>
+    <li>포도</li>
+  </ul>
+
+  <script>
+    document.querySelectorAll("li").forEach(item => {
+      item.addEventListener("click", () => {
+        item.style.color = "red"; 
+      });
+    });
+  </script>
+</body>
+</html>
