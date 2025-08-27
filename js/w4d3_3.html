@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="문자열 입력">
+  <button onclick="reverseText()">뒤집기</button>
+  <p id="result"></p>
+
+  <script>
+    function reverseText() {
+      let input = document.getElementById("userInput").value;
+      let reversed = input.split("").reverse().join("");
+      document.getElementById("result").innerText = "뒤집은 결과: " + reversed;
+    }
+  </script>
+</body>
+</html>
