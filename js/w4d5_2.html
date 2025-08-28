@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>div 숨기기</title>
+</head>
+<body>
+  <div id="box" style="width:200px; height:100px; background:tomato;">여기 DIV</div>
+  <button onclick="hideDiv()">DIV 숨기기</button>
+
+  <script>
+    function hideDiv() {
+      const box = document.getElementById("box");
+      box.style.display = box.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
